@@ -11,7 +11,15 @@
         box-sizing: border-box;
       }
     </style>
+    <script defer>
+      window.onload = function () {
+        const yearBox = document.getElementById("year");
+        const date = new Date().getFullYear();
+        yearBox.textContent = date;
+      };
+    </script>
   </head>
+
   <body style="font-family: Inter, sans-serif">
     <section>
       <div
@@ -155,7 +163,7 @@
             Looking for where to showcase and sell your products?
             <a
               style="color: #0072ef; text-decoration: none"
-              href="https://www.dummysignup"
+              href="https://www.kreatesell.com/signup"
               >Sign up here</a
             >
           </p>
@@ -212,7 +220,7 @@
             <span style="color: #323232; font-size: 1rem; font-weight: bold"
               >&copy;</span
             >
-            2021 KreateSell. All rights reserved
+            <span id="year"></span> KreateSell. All rights reserved
           </footer>
         </div>
       </section>
